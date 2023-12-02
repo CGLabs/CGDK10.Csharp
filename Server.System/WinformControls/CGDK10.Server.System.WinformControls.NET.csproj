@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
+    <AnalysisLevel>6.0-all</AnalysisLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CGDK.buffer">
+      <HintPath>..\..\buffer\CGDK.buffer.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK.buffer.Generator">
+      <HintPath>..\..\buffer\CGDK.buffer.Generator.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.Net.Socket.NET">
+      <HintPath>..\..\Dll\CGDK10.Net.Socket.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.system.object.NET">
+      <HintPath>..\..\Dll\CGDK10.system.object.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.System.WinformControls.NET">
+      <HintPath>..\..\Dll\CGDK10.System.WinformControls.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(TargetPath)&quot; &quot;..\..\dll\&quot; /y&#xD;&#xA;xcopy &quot;$(TargetDir)$(TargetName).pdb&quot; &quot;..\..\dll\&quot; /y" />
+  </Target>
+
+</Project>

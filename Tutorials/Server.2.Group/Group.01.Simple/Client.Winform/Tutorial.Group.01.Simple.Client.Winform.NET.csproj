@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows7.0</TargetFramework>
+    <RootNamespace>tutorial.group._01.simple.client.winform</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <Import Project="..\..\common\common.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <Reference Include="CGDK.buffer">
+      <HintPath>..\..\..\..\buffer\dll\CGDK.buffer.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK.buffer.Generator">
+      <HintPath>..\..\..\..\buffer\dll\CGDK.buffer.Generator.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.net.socket.NET.core">
+      <HintPath>..\..\..\..\dll\CGDK10.net.socket.NET.core.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.server.system.group.NET.core">
+      <HintPath>..\..\..\..\dll\CGDK10.server.system.group.NET.core.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.system.object.NET.core">
+      <HintPath>..\..\..\..\dll\CGDK10.system.object.NET.core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

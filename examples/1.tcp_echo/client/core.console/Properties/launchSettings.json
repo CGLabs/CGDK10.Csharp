@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "sample.01.tcp_echo.client.console": {
-      "commandName": "Project",
-      "nativeDebugging": true
-    }
-  }
-}

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>tutorial.socket._01.tcp_simple.client.console</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="..\..\common\common.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <Reference Include="CGDK.buffer">
+      <HintPath>..\..\..\..\buffer\CGDK.buffer.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK.buffer.Generator">
+      <HintPath>..\..\..\..\buffer\CGDK.buffer.Generator.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.Net.Socket.NET">
+      <HintPath>..\..\..\..\Dll\CGDK10.Net.Socket.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.System.Object.NET">
+      <HintPath>..\..\..\..\Dll\CGDK10.System.Object.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

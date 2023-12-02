@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CGDK.buffer">
+      <HintPath>..\..\buffer\CGDK.buffer.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK.buffer.Generator">
+      <HintPath>..\..\buffer\CGDK.buffer.Generator.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.Net.Socket.NET">
+      <HintPath>..\..\Dll\CGDK10.Net.Socket.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.system.object.NET">
+      <HintPath>..\..\Dll\CGDK10.system.object.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.System.WinformControls.NET">
+      <HintPath>..\..\Dll\CGDK10.System.WinformControls.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Json">
+      <HintPath>..\..\dll\System.Net.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Common", "Common\Common.shproj", "{742BDABF-97BD-44B7-BFD4-19B947B28EF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial.Socket.01.TcpSimple.Server.Console.NET", "Socket.01.TcpSimple\Server.Console\Tutorial.Socket.01.TcpSimple.Server.Console.NET.csproj", "{7E2D31DC-93F3-4765-903A-B272A7A22B40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial.Socket.02.TcpDelegate.Server.Console.NET", "Socket.02.TcpDelegate\Server.Console\Tutorial.Socket.02.TcpDelegate.Server.Console.NET.csproj", "{55009984-890F-4064-A121-474A8BA6520E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial.Socket.03.TcpMessage.Server.Console.NET", "Socket.03.TcpMessage\Server.Console\Tutorial.Socket.03.TcpMessage.Server.Console.NET.csproj", "{CC35ED73-7FFE-4ED3-BC61-AEB1C4FE05BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial.Socket.04.TcpReconnect.Server.Console.NET", "Socket.04.TcpReconnect\Server.Console\Tutorial.Socket.04.TcpReconnect.Server.Console.NET.csproj", "{670277BD-A5BA-47BA-AB8E-F1F0F632B932}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial.Socket.05.UdpSimple.Server.Console.NET", "Socket.05.UdpSimple\Server.Console\Tutorial.Socket.05.UdpSimple.Server.Console.NET.csproj", "{3F669C94-286E-49A1-86D4-91884C8690E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial.Socket.Ex01.SocketSetting.Server.Console.NET", "Socket.Ex01.SocketSetting\Server.Console\Tutorial.Socket.Ex01.SocketSetting.Server.Console.NET.csproj", "{E3171DB3-9B87-4053-8CE4-910B5F604289}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial.Socket.Ex02.MessageSync.Server.Console.NET", "Socket.Ex02.MessageSync\Server.Console\Tutorial.Socket.Ex02.MessageSync.Server.Console.NET.csproj", "{10FC6904-AE89-4349-9695-804B21F1D11B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial.Socket.Ex03.TcpRestorable.Server.Console.NET", "Socket.Ex03.TcpRestorable\Server.Console\Tutorial.Socket.Ex03.TcpRestorable.Server.Console.NET.csproj", "{B6BDD45E-4E66-442B-81E4-81DB41306522}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E2D31DC-93F3-4765-903A-B272A7A22B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E2D31DC-93F3-4765-903A-B272A7A22B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E2D31DC-93F3-4765-903A-B272A7A22B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E2D31DC-93F3-4765-903A-B272A7A22B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55009984-890F-4064-A121-474A8BA6520E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55009984-890F-4064-A121-474A8BA6520E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55009984-890F-4064-A121-474A8BA6520E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55009984-890F-4064-A121-474A8BA6520E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC35ED73-7FFE-4ED3-BC61-AEB1C4FE05BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC35ED73-7FFE-4ED3-BC61-AEB1C4FE05BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC35ED73-7FFE-4ED3-BC61-AEB1C4FE05BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC35ED73-7FFE-4ED3-BC61-AEB1C4FE05BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670277BD-A5BA-47BA-AB8E-F1F0F632B932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{670277BD-A5BA-47BA-AB8E-F1F0F632B932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{670277BD-A5BA-47BA-AB8E-F1F0F632B932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{670277BD-A5BA-47BA-AB8E-F1F0F632B932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F669C94-286E-49A1-86D4-91884C8690E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F669C94-286E-49A1-86D4-91884C8690E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F669C94-286E-49A1-86D4-91884C8690E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F669C94-286E-49A1-86D4-91884C8690E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3171DB3-9B87-4053-8CE4-910B5F604289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3171DB3-9B87-4053-8CE4-910B5F604289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3171DB3-9B87-4053-8CE4-910B5F604289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3171DB3-9B87-4053-8CE4-910B5F604289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10FC6904-AE89-4349-9695-804B21F1D11B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10FC6904-AE89-4349-9695-804B21F1D11B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10FC6904-AE89-4349-9695-804B21F1D11B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10FC6904-AE89-4349-9695-804B21F1D11B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6BDD45E-4E66-442B-81E4-81DB41306522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6BDD45E-4E66-442B-81E4-81DB41306522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6BDD45E-4E66-442B-81E4-81DB41306522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6BDD45E-4E66-442B-81E4-81DB41306522}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EC84F78-50A0-4C5B-AB33-46D2696F7355}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		common\common.projitems*{10fc6904-ae89-4349-9695-804b21f1d11b}*SharedItemsImports = 5
+		common\common.projitems*{670277bd-a5ba-47ba-ab8e-f1f0f632b932}*SharedItemsImports = 5
+		common\common.projitems*{742bdabf-97bd-44b7-bfd4-19b947b28ef3}*SharedItemsImports = 13
+		common\common.projitems*{7e2d31dc-93f3-4765-903a-b272a7a22b40}*SharedItemsImports = 5
+		common\common.projitems*{b6bdd45e-4e66-442b-81e4-81db41306522}*SharedItemsImports = 5
+		common\common.projitems*{cc35ed73-7ffe-4ed3-bc61-aeb1c4fe05bc}*SharedItemsImports = 5
+		common\common.projitems*{e3171db3-9b87-4053-8ce4-910b5f604289}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal

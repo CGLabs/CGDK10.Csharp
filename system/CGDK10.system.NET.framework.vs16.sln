@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CGDK10.system.object", "object\source\CGDK10.system.object.shproj", "{D6086C91-9CF1-4644-9B91-3E2D2E607C9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGDK10.system.object.NET.framework", "object\csproject\NET.framework\CGDK10.system.object.NET.framework.csproj", "{0E40299F-A47A-496E-B5F5-66D4021BFADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGDK10.system.winform_controls.NET.framework", "winform_controls\CGDK10.system.winform_controls.NET.framework.csproj", "{F829FC3D-8F65-4B1D-8364-03B288A34074}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E40299F-A47A-496E-B5F5-66D4021BFADC} = {0E40299F-A47A-496E-B5F5-66D4021BFADC}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		object\source\CGDK10.system.object.projitems*{0e40299f-a47a-496e-b5f5-66d4021bfadc}*SharedItemsImports = 4
+		object\source\CGDK10.system.object.projitems*{d6086c91-9cf1-4644-9b91-3e2d2e607c9d}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E40299F-A47A-496E-B5F5-66D4021BFADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E40299F-A47A-496E-B5F5-66D4021BFADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E40299F-A47A-496E-B5F5-66D4021BFADC}.Debug|x64.ActiveCfg = Debug|x64
+		{0E40299F-A47A-496E-B5F5-66D4021BFADC}.Debug|x64.Build.0 = Debug|x64
+		{0E40299F-A47A-496E-B5F5-66D4021BFADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E40299F-A47A-496E-B5F5-66D4021BFADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E40299F-A47A-496E-B5F5-66D4021BFADC}.Release|x64.ActiveCfg = Release|x64
+		{0E40299F-A47A-496E-B5F5-66D4021BFADC}.Release|x64.Build.0 = Release|x64
+		{F829FC3D-8F65-4B1D-8364-03B288A34074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F829FC3D-8F65-4B1D-8364-03B288A34074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F829FC3D-8F65-4B1D-8364-03B288A34074}.Debug|x64.ActiveCfg = Debug|x64
+		{F829FC3D-8F65-4B1D-8364-03B288A34074}.Debug|x64.Build.0 = Debug|x64
+		{F829FC3D-8F65-4B1D-8364-03B288A34074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F829FC3D-8F65-4B1D-8364-03B288A34074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F829FC3D-8F65-4B1D-8364-03B288A34074}.Release|x64.ActiveCfg = Release|x64
+		{F829FC3D-8F65-4B1D-8364-03B288A34074}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {049DA79D-C5EA-4A40-BBEA-844671C41B6F}
+	EndGlobalSection
+EndGlobal

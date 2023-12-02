@@ -1,0 +1,15 @@
+D:\dll\NET.core\AnyCPU\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core.deps.json
+D:\dll\NET.core\AnyCPU\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core.dll
+D:\dll\NET.core\AnyCPU\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core.pdb
+D:\project_CGDK\CGDK10.C#\system\wpf_controls\obj\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core.csproj.AssemblyReference.cache
+D:\project_CGDK\CGDK10.C#\system\wpf_controls\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+D:\project_CGDK\CGDK10.C#\system\wpf_controls\obj\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core_MarkupCompile.cache
+D:\project_CGDK\CGDK10.C#\system\wpf_controls\obj\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core_MarkupCompile.lref
+D:\project_CGDK\CGDK10.C#\system\wpf_controls\obj\Debug\netcoreapp3.1\Themes\Generic.baml
+D:\project_CGDK\CGDK10.C#\system\wpf_controls\obj\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core.g.resources
+D:\project_CGDK\CGDK10.C#\system\wpf_controls\obj\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core.GeneratedMSBuildEditorConfig.editorconfig
+D:\project_CGDK\CGDK10.C#\system\wpf_controls\obj\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core.AssemblyInfoInputs.cache
+D:\project_CGDK\CGDK10.C#\system\wpf_controls\obj\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core.AssemblyInfo.cs
+D:\project_CGDK\CGDK10.C#\system\wpf_controls\obj\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core.csproj.CoreCompileInputs.cache
+D:\project_CGDK\CGDK10.C#\system\wpf_controls\obj\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core.dll
+D:\project_CGDK\CGDK10.C#\system\wpf_controls\obj\Debug\netcoreapp3.1\CGDK10.system.wpf_controls.NET.core.pdb

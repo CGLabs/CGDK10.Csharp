@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CGDK10.system.object.NET.core": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

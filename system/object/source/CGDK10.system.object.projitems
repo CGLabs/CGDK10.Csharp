@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d6086c91-9cf1-4644-9b91-3e2d2e607c9d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>object</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)attribute_child_object.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CGDK.concurrent_stack.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CGDK.heap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CGDK.seat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)definitions.message.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)definitions.object.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)executable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)executable_delegate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)executable_queue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)executor.list.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)executor.schedulable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)executor.single_execute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)executor.system.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)executor.thread.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)factory.array.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)factory.auto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)factory.memory_block.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)factory.object.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Iattachable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Idestroyable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Iexecutable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Iexecutor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ifactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Iinitializable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ilog_filter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ilog_targetable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Imessageable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Imessage_transmitter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Inameable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Iobject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Iobject_identifiable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Iobject_stateable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ipausable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ireferenceable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ischedulable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Istartable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Iupdatable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LOG.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)manager_register.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)message_transmitter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nobject_stateable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nobject_stateable_nameable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)object_status.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)schedulable.executable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)sMESSAGE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)utils.cs" />
+  </ItemGroup>
+</Project>

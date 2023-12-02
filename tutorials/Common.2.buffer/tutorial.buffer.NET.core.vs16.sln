@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tutorial.buffer.01.basic.NET.core", "buffer.01.basic\tutorial.buffer.01.basic.NET.core.csproj", "{4472373E-0FBF-4D9C-9B65-DF51EE78F754}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tutorial.buffer.02.append_extract.NET.core", "buffer.02.append_extract\tutorial.buffer.02.append_extract.NET.core.csproj", "{24FAC125-A8CF-4321-9C97-502EE76407C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tutorial.buffer.03.struct_serialize.NET.core", "buffer.03.struct_serialize\tutorial.buffer.03.struct_serialize.NET.core.csproj", "{B206C2C8-68E1-419B-85DF-BE5C8E5A0E1C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tutorial.buffer.04.class_serialize.NET.core", "buffer.04.class_serialize\tutorial.buffer.04.class_serialize.NET.core.csproj", "{5E8AB39E-E4DD-433D-82CE-FF6FFF0C2B72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4472373E-0FBF-4D9C-9B65-DF51EE78F754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4472373E-0FBF-4D9C-9B65-DF51EE78F754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4472373E-0FBF-4D9C-9B65-DF51EE78F754}.Debug|x64.ActiveCfg = Debug|x64
+		{4472373E-0FBF-4D9C-9B65-DF51EE78F754}.Debug|x64.Build.0 = Debug|x64
+		{4472373E-0FBF-4D9C-9B65-DF51EE78F754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4472373E-0FBF-4D9C-9B65-DF51EE78F754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4472373E-0FBF-4D9C-9B65-DF51EE78F754}.Release|x64.ActiveCfg = Release|x64
+		{4472373E-0FBF-4D9C-9B65-DF51EE78F754}.Release|x64.Build.0 = Release|x64
+		{24FAC125-A8CF-4321-9C97-502EE76407C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24FAC125-A8CF-4321-9C97-502EE76407C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24FAC125-A8CF-4321-9C97-502EE76407C6}.Debug|x64.ActiveCfg = Debug|x64
+		{24FAC125-A8CF-4321-9C97-502EE76407C6}.Debug|x64.Build.0 = Debug|x64
+		{24FAC125-A8CF-4321-9C97-502EE76407C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24FAC125-A8CF-4321-9C97-502EE76407C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24FAC125-A8CF-4321-9C97-502EE76407C6}.Release|x64.ActiveCfg = Release|x64
+		{24FAC125-A8CF-4321-9C97-502EE76407C6}.Release|x64.Build.0 = Release|x64
+		{B206C2C8-68E1-419B-85DF-BE5C8E5A0E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B206C2C8-68E1-419B-85DF-BE5C8E5A0E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B206C2C8-68E1-419B-85DF-BE5C8E5A0E1C}.Debug|x64.ActiveCfg = Debug|x64
+		{B206C2C8-68E1-419B-85DF-BE5C8E5A0E1C}.Debug|x64.Build.0 = Debug|x64
+		{B206C2C8-68E1-419B-85DF-BE5C8E5A0E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B206C2C8-68E1-419B-85DF-BE5C8E5A0E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B206C2C8-68E1-419B-85DF-BE5C8E5A0E1C}.Release|x64.ActiveCfg = Release|x64
+		{B206C2C8-68E1-419B-85DF-BE5C8E5A0E1C}.Release|x64.Build.0 = Release|x64
+		{5E8AB39E-E4DD-433D-82CE-FF6FFF0C2B72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8AB39E-E4DD-433D-82CE-FF6FFF0C2B72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8AB39E-E4DD-433D-82CE-FF6FFF0C2B72}.Debug|x64.ActiveCfg = Debug|x64
+		{5E8AB39E-E4DD-433D-82CE-FF6FFF0C2B72}.Debug|x64.Build.0 = Debug|x64
+		{5E8AB39E-E4DD-433D-82CE-FF6FFF0C2B72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8AB39E-E4DD-433D-82CE-FF6FFF0C2B72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8AB39E-E4DD-433D-82CE-FF6FFF0C2B72}.Release|x64.ActiveCfg = Release|x64
+		{5E8AB39E-E4DD-433D-82CE-FF6FFF0C2B72}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9807CAA6-1144-4EF7-A117-4FAF1E6953A2}
+	EndGlobalSection
+EndGlobal

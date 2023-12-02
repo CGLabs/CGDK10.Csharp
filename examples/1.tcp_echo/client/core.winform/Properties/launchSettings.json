@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "sample.01.tcp_echo.client.winform": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

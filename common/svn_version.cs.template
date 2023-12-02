@@ -1,0 +1,42 @@
+//*****************************************************************************
+//*                                                                           *
+//*                      Cho sanghyun's Game Classes II                       *
+//*                       Ver 8.0 / Release 2015.01.05                        *
+//*                                                                           *
+//*                           Server Admin Classes                            *
+//*                                                                           *
+//*                                                                           *
+//*                                                                           *
+//*                                                                           *
+//*  This Program is programmed by Cho SangHyun. sangduck@cgcii.co.kr         *
+//*  Best for Game Developement and Optimized for Game Developement.          *
+//*                                                                           *
+//*                    (C) 2008 CGLabs All right reserved.                    *
+//*                          http://www.CGCII.co.kr                           *
+//*                                                                           *
+//*****************************************************************************
+//*****************************************************************************
+//
+//   1) Add Below two lines to "Configuration Properties/BuildEvents/Pre-Build Event/Command Line"
+//   
+//   SubWCRev.exe $(ProjectDir) "C:\CGDK8(for C#)\Common\svn_version.cs.template" $(ProjectDir)\svn_version.cs
+//   Taskkill /IM "$(TargetName)$(TargetExt)" /FI "STATUS eq RUNNING" /F
+//
+//   2) then "svn_version.h" file will be created
+//   3) include "svn_version.h" file
+//   4) Use below definition
+//
+//*****************************************************************************
+#ifndef _SVN_VERSION_H_
+#define _SVN_VERSION_H_
+
+public static class SVN_INFO
+{
+	public static const int		LOCAL_MODIFICATIONS		 = $WCMODS?1:0$;	// 1 if there are modifications to the local working copy, 0 otherwise
+	public static const int		COMMIT_REVISION			 = $WCREV$;			// Highest committed revision number in the working copy
+	public static const string	COMMIT_REVISION_STRING	 = "$WCREV$";		// Highest committed revision number in the working copy
+	public static const string	UPDATE_REVISION_STRING	 = "$WCRANGE$";		// Highest committed revision number in the working copy
+	public static const string	TIME_NOW_STRING			 = "$WCNOW$"		// Current system date &amp; time
+}
+
+#endif

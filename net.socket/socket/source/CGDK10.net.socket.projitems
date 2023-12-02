@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>2c39eef7-13c0-4355-9288-45ec3e199d3a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>socket</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)net.acceptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.defineMessagesSocket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.definitions.socket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.dns.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.io.connective.Iacceptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.io.connective.Nacceptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.io.Iconnectable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.io.Iconnect_requestable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.io.Ionnective.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.io.Isender.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.io.server.restorable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.io.socket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.io.statistics.connective.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.io.statistics.traffic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.Itcp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.Itcp_client.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.Iudp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.security.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.server.restorable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.tcp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.tcp.Isync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.tcp.sync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.tcp_client.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.tcp_client.Isync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.tcp_client.restorable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.tcp_client.sync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.udp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.udp.Isync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)net.socket.udp.sync.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tutorial.group.02.message_mediator.client.console.NET.core", "tutorial.group.02.message_mediator.client.console\tutorial.group.02.message_mediator.client.console.NET.core.csproj", "{C75AA3D4-0620-49B5-B740-6EF70B492DBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tutorial.group.02.message_mediator.server.console.NET.core", "tutorial.group.02.message_mediator.server.console\tutorial.group.02.message_mediator.server.console.NET.core.csproj", "{13F4263D-6061-42CF-B939-0EF5ED3D8BE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C75AA3D4-0620-49B5-B740-6EF70B492DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75AA3D4-0620-49B5-B740-6EF70B492DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75AA3D4-0620-49B5-B740-6EF70B492DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75AA3D4-0620-49B5-B740-6EF70B492DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13F4263D-6061-42CF-B939-0EF5ED3D8BE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F4263D-6061-42CF-B939-0EF5ED3D8BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F4263D-6061-42CF-B939-0EF5ED3D8BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F4263D-6061-42CF-B939-0EF5ED3D8BE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAB99345-73C8-4DFD-BD31-2D2E75E959B5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>tutorial.socket._01.tcp_simple.server.winform</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CGDK.buffer.NET.core">
+      <HintPath>..\..\..\..\dll\CGDK.buffer.NET.core.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="CGDK10.net.socket.NET.core">
+      <HintPath>..\..\..\..\dll\CGDK10.net.socket.NET.core.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="CGDK10.system.object.NET.core">
+      <HintPath>..\..\..\..\dll\CGDK10.system.object.NET.core.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

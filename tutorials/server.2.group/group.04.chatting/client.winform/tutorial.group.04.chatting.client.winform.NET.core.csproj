@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>tutorial.group._04.chatting.client.winform</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <Import Project="..\..\common\common.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <Reference Include="CGDK.buffer.NET.core">
+      <HintPath>..\..\..\..\dll\CGDK.buffer.NET.core.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.net.socket.NET.core">
+      <HintPath>..\..\..\..\dll\CGDK10.net.socket.NET.core.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.server.system.group.NET.core">
+      <HintPath>..\..\..\..\dll\CGDK10.server.system.group.NET.core.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.system.object.NET.core">
+      <HintPath>..\..\..\..\dll\CGDK10.system.object.NET.core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

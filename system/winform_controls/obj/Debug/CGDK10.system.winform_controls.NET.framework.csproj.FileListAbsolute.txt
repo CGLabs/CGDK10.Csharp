@@ -1,0 +1,7 @@
+D:\project_CGDK\CGDK10.C#\system\winform_controls\obj\Debug\CGDK10.system.winform_controls.NET.framework.csproj.AssemblyReference.cache
+D:\project_CGDK\CGDK10.C#\system\winform_controls\obj\Debug\CGDK10.system.winform_controls.NET.framework.csproj.CoreCompileInputs.cache
+D:\project_CGDK\CGDK10.C#\dll\NET.framework\AnyCPU\Debug\CGDK10.system.winform_controls.dll
+D:\project_CGDK\CGDK10.C#\dll\NET.framework\AnyCPU\Debug\CGDK10.system.winform_controls.pdb
+D:\project_CGDK\CGDK10.C#\system\winform_controls\obj\Debug\CGDK10.system.winform_controls.NET.framework.csproj.CopyComplete
+D:\project_CGDK\CGDK10.C#\system\winform_controls\obj\Debug\CGDK10.system.winform_controls.dll
+D:\project_CGDK\CGDK10.C#\system\winform_controls\obj\Debug\CGDK10.system.winform_controls.pdb

@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>CGDK10.server.system</RootNamespace>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\..\..\dll\NET.core\AnyCPU\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\..\..\dll\NET.core\AnyCPU\Release\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutputPath>..\..\..\..\dll\NET.core\x64\Release\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutputPath>..\..\..\..\dll\NET.core\x64\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CGDK.buffer.NET.core">
+      <HintPath>..\..\..\..\buffer\dll\CGDK.buffer.NET.core.dll</HintPath>
+    </Reference>
+    <Reference Include="CGDK10.system.object.NET.core">
+      <HintPath>..\..\..\..\dll\CGDK10.system.object.NET.core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(TargetPath)&quot; &quot;..\..\..\..\dll\&quot; /y&#xD;&#xA;xcopy &quot;$(TargetDir)$(TargetName).pdb&quot; &quot;..\..\..\..\dll\&quot; /y" />
+  </Target>
+
+  <Import Project="..\..\source\CGDK10.server.system.log.projitems" Label="Shared" />
+
+</Project>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>56d2514f-7a88-4200-8648-a78b93e43345</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CGDK10.server.system.time_event</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)server.system.defintions.time_event.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)server.system.time_event.entity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)server.system.time_event.entity_iteration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)server.system.time_event.entity_start_end.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)server.system.time_event.entity_start_iteration_end.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)server.system.time_event.event.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)server.system.time_event.Ientity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)server.system.time_event.Ievent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)server.system.time_event.manager.cs" />
+  </ItemGroup>
+</Project>

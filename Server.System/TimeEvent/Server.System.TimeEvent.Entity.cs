@@ -433,7 +433,7 @@ namespace CGDK.Server.TimeEvent
 				}
 
 				// 5) add log
-				var presult_event = _AppendResultLog("ProcessExecute_function");
+				var presult_event = ProcessAppendResultLog("ProcessExecute_function");
 
 				try
 				{

@@ -82,16 +82,17 @@ namespace CGDK.Server.TimeEvent
 					var presult_event = m_plog_result.sub_log.Last;
 
 					// 2) alloc LOG_RECORD object
-					log_sub = new LOG_RECORD();
-
-					// 3) set log info
-					log_sub.Type = _type;
-					log_sub.Level = _level;
-					log_sub.bufMessage = _message;
-					log_sub.Attribute = 0;
-					log_sub.Source = 0;
-					log_sub.Destination = 0;
-					log_sub.timeOccure = presult_event.Value.timeOccure;
+					log_sub = new LOG_RECORD
+					{
+						// 3) set log info
+						Type = _type,
+						Level = _level,
+						Message = _message,
+						Attribute = 0,
+						Source = 0,
+						Destination = 0,
+						timeOccure = presult_event.Value.timeOccure
+					};
 
 					// 3) add LOG_RECORD object
 					presult_event.Value.sub_log.AddLast(log_sub);
@@ -107,7 +108,7 @@ namespace CGDK.Server.TimeEvent
 
 		public abstract long		ProcessExecute(ulong _return, ulong _param);
 
-		protected LOG_RECORD		_AppendResultLog(string _message)
+		protected LOG_RECORD		ProcessAppendResultLog(string _message)
 		{
 			// check) _message shouldn't be nullptr
 			Debug.Assert(_message.Length != 0);
@@ -124,16 +125,17 @@ namespace CGDK.Server.TimeEvent
 				lock(m_plog_result)
 				{
 					// 1) allocate new LOG_RECORD object
-					pevent_result = new LOG_RECORD();
-
-					// 2) set log info
-					pevent_result.Type = eLOG_TYPE.UNDEFINED;
-					pevent_result.Level = eLOG_LEVEL.NORMAL;
-					pevent_result.bufMessage = _message;
-					pevent_result.Attribute = 0;
-					pevent_result.Source = 0;
-					pevent_result.Destination = 0;
-					pevent_result.timeOccure = DateTime.UtcNow;
+					pevent_result = new LOG_RECORD
+					{
+						// 2) set log info
+						Type = eLOG_TYPE.UNDEFINED,
+						Level = eLOG_LEVEL.NORMAL,
+						Message = _message,
+						Attribute = 0,
+						Source = 0,
+						Destination = 0,
+						timeOccure = DateTime.UtcNow
+					};
 
 					// 4) 새로운 Result 객체를 추가한다.
 					this.m_plog_result.sub_log.AddLast(pevent_result);
@@ -164,7 +166,7 @@ namespace CGDK.Server.TimeEvent
 			lock(m_plog_result)
 			{
 				// 2) ...
-				_log_result.bufMessage += " [" + _log_result.Result.ToString() + "]";
+				_log_result.Message += " [" + _log_result.Result.ToString() + "]";
 			}
 		}
 

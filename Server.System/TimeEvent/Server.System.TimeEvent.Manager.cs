@@ -54,7 +54,7 @@ namespace CGDK.Server.TimeEvent
 					return false;
 
 				//// log) 
-				//_entity->_AppendResultLog("@register");
+				//_entity->ProcessAppendResultLog("@register");
 
 				// 2) set sevent setup time
 				_entity.EntityStatus.State = eSTATE.RUN;
@@ -110,7 +110,7 @@ namespace CGDK.Server.TimeEvent
 				//try
 				//{
 				//	// log)
-				//	_entity->_AppendResultLog("@unregister");
+				//	_entity->ProcessAppendResultLog("@unregister");
 				//}
 				//catch (...)
 				//{

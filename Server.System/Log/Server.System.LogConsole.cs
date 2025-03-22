@@ -40,7 +40,7 @@ namespace CGDK.Server
 				return;
 
 			// check) message must be not empty
-			if(_log_record.bufMessage.Length == 0)
+			if(_log_record.Message.Length == 0)
 				return;
 
 			// check) 
@@ -150,7 +150,7 @@ namespace CGDK.Server
 
 						// - 로그 메시지를 출력한다.
 						Console.ForegroundColor = text_color;
-						Console.Write(_log_record.bufMessage);
+						Console.Write(_log_record.Message);
 						Console.ForegroundColor = ConsoleColor.Gray;
 						Console.Write("\n");
 					}

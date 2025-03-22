@@ -4,6 +4,12 @@
     <Compile Update="EventList.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="LogView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="QuerierList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>

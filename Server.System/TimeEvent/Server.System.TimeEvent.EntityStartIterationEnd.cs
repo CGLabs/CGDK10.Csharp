@@ -84,7 +84,7 @@ namespace CGDK.Server.TimeEvent
 			this.m_is_event_start = false;
 
 			// 2) append result log
-			var presult_event = _AppendResultLog("ProcessEvent_start");
+			var presult_event = ProcessAppendResultLog("ProcessEvent_start");
 
 			try
 			{
@@ -149,7 +149,7 @@ namespace CGDK.Server.TimeEvent
 			Debug.Assert(timeNext <= _time_now);
 
 			// 1) append result log
-			var presult_event = _AppendResultLog("ProcessEvent_iteration");
+			var presult_event = ProcessAppendResultLog("ProcessEvent_iteration");
 
 			try
 			{
@@ -222,7 +222,7 @@ namespace CGDK.Server.TimeEvent
 			this.m_is_event_terminate = false;
 
 			// 2) 새로운 Result를 추가한다.
-			var presult_event = _AppendResultLog("ProcessEvent_end");
+			var presult_event = ProcessAppendResultLog("ProcessEvent_end");
 
 			try
 			{

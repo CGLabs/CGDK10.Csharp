@@ -52,7 +52,7 @@ namespace CGDK.Server.TimeEvent
 				return 1;
 
 			// 2) 새로운 Result를 추가한다.
-			var presult_event = _AppendResultLog("ProcessEvent_iteration");
+			var presult_event = ProcessAppendResultLog("ProcessEvent_iteration");
 
 			// check)
 			Debug.Assert(presult_event != null);

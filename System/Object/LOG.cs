@@ -41,7 +41,7 @@ namespace CGDK
 		public eRESULT		Result;
 
 		public int			CharEncoding;
-		public string		bufMessage;
+		public string		Message;
 
 		public ulong		Origin;
 		public ulong		Attribute;
@@ -95,7 +95,7 @@ namespace CGDK
 
 			// 1) Log 출력
 		#if _DEBUG
-			Trace.WriteLine(_log_record.bufMessage);
+			Trace.WriteLine(_log_record.Message);
 		#endif
 			// 2) 전송할 Messageable
 			ILogTargetable log_targetable = (_log_targetable != null) ? _log_targetable : null;
@@ -131,7 +131,7 @@ namespace CGDK
 				log_record.Level = _Level;
 				log_record.Result = eRESULT.SUCCESS;
 				log_record.CharEncoding = 0;
-				log_record.bufMessage = _message;
+				log_record.Message = _message;
 				log_record.Origin = 0;
 				log_record.Attribute = 0;
 				log_record.Source = 0;

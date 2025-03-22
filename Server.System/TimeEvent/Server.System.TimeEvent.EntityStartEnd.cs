@@ -63,7 +63,7 @@ namespace CGDK.Server.TimeEvent
 				EntityStatus.timeNext = m_time_event_terminate;
 
 				// - append result log
-				var presult_event = _AppendResultLog("ProcessEvent_start");
+				var presult_event = ProcessAppendResultLog("ProcessEvent_start");
 
 				try
 				{
@@ -120,7 +120,7 @@ namespace CGDK.Server.TimeEvent
 				this.EntityStatus.timeNext = new DateTime(0);
 
 				// - append result log
-				var presult_event = _AppendResultLog("ProcessEvent_end");
+				var presult_event = ProcessAppendResultLog("ProcessEvent_end");
 
 				try
 				{

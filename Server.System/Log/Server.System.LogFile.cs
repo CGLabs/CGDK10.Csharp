@@ -112,13 +112,13 @@ namespace CGDK.Server
 					_log_record.timeOccure.Hour, 
 					_log_record.timeOccure.Minute, 
 					_log_record.timeOccure.Second,
-					_log_record.bufMessage
+					_log_record.Message
 					);
 			}
 			else
 			{
 				str_write = String.Format("                      {0}",
-					_log_record.bufMessage
+					_log_record.Message
 					);
 			}
 

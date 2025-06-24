@@ -206,6 +206,7 @@ namespace CGDK.Server.System.WinformControls
 		}
 		public void						AddString(DateTime LogTime, string MessageString, Color TextColor, bool IsBold)
 		{
+		#pragma warning disable CA1305
 			var Header = string.Format("[{0:0000}/{1:00}/{2:00} {3:00}:{4:00}:{5:00}]",
 				LogTime.Year,
 				LogTime.Month,
@@ -214,6 +215,7 @@ namespace CGDK.Server.System.WinformControls
 				LogTime.Minute,
 				LogTime.Second
 				);
+		#pragma warning restore CA1305
 
 			// return) 
 			AddString(Header, MessageString, TextColor, IsBold);
@@ -333,6 +335,7 @@ namespace CGDK.Server.System.WinformControls
 						{
 							// - 출력한다.
 							Console.ForegroundColor = ConsoleColor.DarkGray;
+						#pragma warning disable CA1303
 							Console.Write("[{0:0000}/{1:00}/{2:00} {3:00}:{4:00}:{5:00}] ",
 								_log_record.timeOccure.Year,
 								_log_record.timeOccure.Month,
@@ -341,13 +344,16 @@ namespace CGDK.Server.System.WinformControls
 								_log_record.timeOccure.Minute,
 								_log_record.timeOccure.Second
 							);
+						#pragma warning restore CA1303
 							Console.ForegroundColor = ConsoleColor.Gray;
 						}
 						else
 						{
 							// - 빈칸을 출력한다.
 							//           "[0000/00/00 00:00:00] "
+						#pragma warning disable CA1303
 							Console.Write("                      ");
+						#pragma warning restore CA1303
 						}
 
 						// - 로그 메시지를 출력한다.

@@ -3,7 +3,7 @@
 //*                      Cho sanghyun's Game Classes II                       *
 //*                    for C# Ver 2.0 / Release 2019.12.11                    *
 //*                                                                           *
-//*              tutorials socket - tcp_reconnect.server.console              *
+//*            tutorials socket - dup.simple.server.server.console            *
 //*                                                                           *
 //*                                                                           *
 //*                                                                           *

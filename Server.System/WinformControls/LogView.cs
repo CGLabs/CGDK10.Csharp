@@ -1,14 +1,15 @@
-﻿using System;
+﻿using CGDK;
+using CGDK.Server.System.WinformControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Diagnostics;
+using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
-using System.Diagnostics;
 using System.Windows.Forms;
-using CGDK;
-using CGDK.Server.System.WinformControls;
 
 namespace CGDK.Server.System.WinformControls
 {
@@ -197,28 +198,28 @@ namespace CGDK.Server.System.WinformControls
 			// check)
 			Debug.Assert(_countLog != null);
 
-			lableLogTotal.Text = _countTotal.ToString();
+			lableLogTotal.Text = _countTotal.ToString(CultureInfo.CurrentCulture);
 	
 			if(_countLog[(int)eLOG_TYPE.SYSTEM]!=0)
-				lableLogSystem.Text = _countLog[(int)eLOG_TYPE.SYSTEM].ToString();
+				lableLogSystem.Text = _countLog[(int)eLOG_TYPE.SYSTEM].ToString(CultureInfo.CurrentCulture);
 
 			if(_countLog[(int)eLOG_TYPE.PROGRESS]!=0)
-				lableLogProgress.Text = _countLog[(int)eLOG_TYPE.PROGRESS].ToString();
+				lableLogProgress.Text = _countLog[(int)eLOG_TYPE.PROGRESS].ToString(CultureInfo.CurrentCulture);
 
 			if(_countLog[(int)eLOG_TYPE.INFO]!=0)
-				lableLogInfo.Text = _countLog[(int)eLOG_TYPE.INFO].ToString();
+				lableLogInfo.Text = _countLog[(int)eLOG_TYPE.INFO].ToString(CultureInfo.CurrentCulture);
 
 			if(_countLog[(int)eLOG_TYPE.EXCEPTION]!=0)
-				lableLogException.Text = _countLog[(int)eLOG_TYPE.EXCEPTION].ToString();
+				lableLogException.Text = _countLog[(int)eLOG_TYPE.EXCEPTION].ToString(CultureInfo.CurrentCulture);
 
 			if(_countLog[(int)eLOG_TYPE.ERROR]!=0)
-				lableLogError.Text = _countLog[(int)eLOG_TYPE.ERROR].ToString();
+				lableLogError.Text = _countLog[(int)eLOG_TYPE.ERROR].ToString(CultureInfo.CurrentCulture);
 
 			if(_countLog[(int)eLOG_TYPE.DEBUG]!=0)
-				lableLogDebug.Text = _countLog[(int)eLOG_TYPE.DEBUG].ToString();
+				lableLogDebug.Text = _countLog[(int)eLOG_TYPE.DEBUG].ToString(CultureInfo.CurrentCulture);
 
 			//if(_countLog[(int)eLOG_TYPE.ETC]!=0)
-			//	lableLogEtc.Text = _countLog[(int)eLOG_TYPE.ETC].ToString();
+			//	lableLogEtc.Text = _countLog[(int)eLOG_TYPE.ETC].ToString(CultureInfo.CurrentCulture);
 		}
 
 		private	ILogFilter?				m_filterLog;

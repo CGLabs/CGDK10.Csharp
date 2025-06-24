@@ -36,7 +36,7 @@ namespace CGDK
 		public ExecutorSingleExecute()
 		{
 			// 1) List Schedulable을 생성한다.
-			this.m_priority_queue_executable	 = new List<EXECUTION_AT>();
+			this.m_priority_queue_executable = new List<EXECUTION_AT>();
 
 			lock(this.m_priority_queue_executable)
 			{
@@ -55,7 +55,7 @@ namespace CGDK
 			this.CancelAllExecutable();
 		}
 
-		public bool						PostAt(long _tick_time, IExecutable _executable, ulong _param = 0)
+		public bool PostAt(long _tick_time, IExecutable _executable, ulong _param = 0)
 		{
 			// check) _executable null이면 그냥 false를 리턴한다.
 			if(_executable == null)
@@ -70,12 +70,12 @@ namespace CGDK
 			// return) 
 			return	true;
 		}
-		public bool						PostAfter(long _tick_duffer, IExecutable _executable, ulong _param = 0)
+		public bool PostAfter(long _tick_duffer, IExecutable _executable, ulong _param = 0)
 		{
 			return this.PostAt(System.DateTime.Now.Ticks + _tick_duffer, _executable, _param);
 		}
 
-		public bool						CancelExecutable(IExecutable _executable)
+		public bool CancelExecutable(IExecutable _executable)
 		{
 			lock(this.m_priority_queue_executable)
 			{
@@ -171,7 +171,7 @@ namespace CGDK
 			// Return) 성공!!!
 			return true;
 		}
-		public void						CancelAllExecutable()
+		public void CancelAllExecutable()
 		{
 			lock(m_priority_queue_executable)
 			{
@@ -184,12 +184,12 @@ namespace CGDK
 			LOG.INFO_LOW(null, "(info) Execute: all executables are canceled (CGDK.ExecuteClasses.CExecutorSingleExecute.CancelAllExecutable)");
 		}
 
-		public IExecutor				Executor
+		public IExecutor Executor
 		{
 			get { return this.m_executor;}
 			set { this.m_executor=value;}
 		}
-		public int						Count
+		public int Count
 		{
 			get
 			{
@@ -200,7 +200,7 @@ namespace CGDK
 			}
 		}
 
-		public override bool			Execute(int _tick = Timeout.Infinite)
+		public override bool Execute(int _tick = Timeout.Infinite)
 		{
 			// check) m_executor가 null이면 그냥 false를 리턴한다.
 			if(this.m_executor == null)
@@ -231,7 +231,7 @@ namespace CGDK
 			// Return) 
 			return	true;
 		}
-		private void					PushExecutable(EXECUTION_AT _executable)
+		private void PushExecutable(EXECUTION_AT _executable)
 		{
 			lock(m_priority_queue_executable)
 			{
@@ -265,7 +265,7 @@ namespace CGDK
 				this.m_priority_queue_executable[pos_pre] = _executable;
 			}
 		}
-		private void					PopExecutable()
+		private void PopExecutable()
 		{
 			lock(this.m_priority_queue_executable)
 			{
@@ -331,7 +331,7 @@ namespace CGDK
 			public IExecutable		executable;
 			public ulong			param;
 
-			public void				Swap(EXECUTION_AT _right)	{ var t=_right; _right=this; this=t;}
+			public void Swap(EXECUTION_AT _right)	{ var t=_right; _right=this; this=t;}
 		};
 	}
 }

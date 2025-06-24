@@ -456,7 +456,7 @@ namespace CGDK.Server.System.WinformControls
 
         }
 
-		private void SuspendLayout()
+		private new void SuspendLayout()
 		{
 			throw new NotImplementedException();
 		}

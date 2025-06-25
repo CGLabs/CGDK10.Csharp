@@ -206,6 +206,7 @@ namespace CGDK.Server.System.WinformControls
 		}
 		public void						AddString(DateTime LogTime, string MessageString, Color TextColor, bool IsBold)
 		{
+		#pragma warning disable CA1305
 			var Header = string.Format("[{0:0000}/{1:00}/{2:00} {3:00}:{4:00}:{5:00}]",
 				LogTime.Year,
 				LogTime.Month,
@@ -214,6 +215,7 @@ namespace CGDK.Server.System.WinformControls
 				LogTime.Minute,
 				LogTime.Second
 				);
+		#pragma warning restore CA1305
 
 			// return) 
 			AddString(Header, MessageString, TextColor, IsBold);

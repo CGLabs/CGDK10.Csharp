@@ -3,7 +3,7 @@
 //*                      Cho sanghyun's Game Classes II                       *
 //*                    for C# Ver 2.0 / Release 2019.12.11                    *
 //*                                                                           *
-//*                tutorials group - schedulable.client.console               *
+//*                  tutorials group - simple.client.console                  *
 //*                                                                           *
 //*                                                                           *
 //*                                                                           *
@@ -17,41 +17,52 @@
 //*****************************************************************************
 
 using System;
+using System.Net;
+using CGDK;
 
-namespace tutorial.group._03.schedulable.client.console
+public class SocketTcp : CGDK.Net.Socket.ITcpClient
 {
-	class Program
+    protected override void OnRequestConnect(IPEndPoint _remote_ep)
 	{
-		static void Main()
-		{
-			// trace) 
-			Console.WriteLine("[CGCII Network TCP Test Client for C#]");
-			Console.WriteLine("@ Tutorial Group Client/ Simple Group");
+		// trace) 
+        Console.WriteLine(" @ request connect to "+_remote_ep.ToString());
+	}
 
-			// trace) 
-			Console.WriteLine(">> Client Start...");
+    protected override void OnConnect()
+	{
+		// trace) 
+        Console.WriteLine(" @ connected");
 
-			try
-			{
-				// 1) Socke을 생성한다.
-				var socket_client = new SocketTcp();
+		// 1) Buffer를 할당받는다.
+		var temp_buffer = new CGDK.buffer(CGDK.Factory.Memory.AllocBuffer(256));
+			
+		// 2) Message를 작성한다.
+		temp_buffer.Append<uint>(0);
+		temp_buffer.Append<uint>(0);
+		temp_buffer.Append<int>(10);
+		temp_buffer.Append<string>("test value");
+		temp_buffer.SetFront<int>(temp_buffer.Count);
+		
+		// 3) 전송한다.
+		this.Send(temp_buffer);
 
-				// 2) 접속을 시도한다.
-				socket_client.Start("localhost", 20000);
+		// trace) 
+		Console.WriteLine(" @ message Sended (size:" + temp_buffer.Count + " message:" + temp_buffer.GetFront<uint>(4) + ")");
+	}
+    protected override void OnFailConnect(ulong _disconnect_reason)
+	{
+		// trace) 
+        Console.WriteLine(" @ fail to connect");
+	}
+    protected override void OnDisconnect(ulong _disconnect_reason)
+	{
+		// trace) 
+        Console.WriteLine(" @ disconnected");
+	}
 
-				// 3) ESC누를 때까지 대기 (ESC를 누를 때까지 기다린다.)
-				while (Console.ReadKey().Key != ConsoleKey.Escape) ;
-
-				// 4) Socket을 닫는다.
-				socket_client.CloseSocket();
-			}
-			catch (Exception _e)
-			{
-				Console.WriteLine(_e.ToString());
-			}
-
-			// trace) 
-			Console.WriteLine("<< Client Closed...");
-		}
+    protected override int OnMessage(object _source, sMESSAGE _msg)
+	{
+		// return) 
+		return 0;
 	}
 }

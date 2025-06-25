@@ -22,7 +22,7 @@ namespace tutorial.group._01.simple.client.console
 {
 	class Program
 	{
-		public static int Main()
+		public static void Main()
 		{
 			// trace) 
 			Console.WriteLine("[CGCII Network TCP Test Client for C#]");
@@ -52,9 +52,6 @@ namespace tutorial.group._01.simple.client.console
 
 			// trace) 
 			Console.WriteLine("<< Client Closed...");
-
-			// Return) 
-			return 0;
 		}
 	}
 }

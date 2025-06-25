@@ -20,6 +20,7 @@ using System;
 using System.Net;
 using CGDK;
 
+// under construction - 작업중
 public class SocketTcp : CGDK.Net.Socket.ITcpClient
 {
     protected override void OnRequestConnect(IPEndPoint _remote_ep)

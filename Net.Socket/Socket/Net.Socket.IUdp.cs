@@ -704,7 +704,7 @@ namespace CGDK.Net.Socket
 			public	SocketAsyncEventArgs_recv()
 			{
 				this.Completed += new (IUdp.CompleteProcessReceive);
-				this.RemoteEndPoint = new IPEndPoint(IPAddress.Any, 0);
+				this.RemoteEndPoint = new IPEndPoint(IPAddress.IPv6Any, 0);
 			}
 
 			public void Clear()

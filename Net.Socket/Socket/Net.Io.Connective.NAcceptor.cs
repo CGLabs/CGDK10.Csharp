@@ -324,7 +324,7 @@ namespace CGDK.Net.Io.Connective
 			// 2. Parameter 읽기
 			//-----------------------------------------------------------------
 			// 1)  Default값을 설정한다.
-			IPEndPoint remote_ep = new(IPAddress.Any, 0);
+			IPEndPoint remote_ep = new(IPAddress.IPv6Any, 0);			
 			int accept_prepare_on_start = 0;
 			int accept_must_prepare = 0;
 
@@ -599,6 +599,7 @@ namespace CGDK.Net.Io.Connective
 			{
 				// 1) Port를 Reuse하도록 한다.(중요:Connect의 경우 Pool로 동작할 때 NSocket Address를 Reuse하지 않으면 Error를 발생시킬수 있다.)
 				_args.AcceptSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, true);
+				_args.AcceptSocket.SetSocketOption(SocketOptionLevel.IPv6, SocketOptionName.IPv6Only, false);
 
 				// 2) 새로운 Accept를 댄다.
 				pconnectable = this.ProcessAllocConnectable();
@@ -853,7 +854,7 @@ namespace CGDK.Net.Io.Connective
 		protected void					ProcessPrepareSocket()
 		{
 			// 1) Socket을 새로 만든다.
-			var result = this.m_socket_accept.CreateSocketHandle(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+			var result = this.m_socket_accept.CreateSocketHandle(AddressFamily.InterNetworkV6, SocketType.Stream, ProtocolType.Tcp);
 
 			// check) NSocket 생성하지 못했으면 던진다~
 			if(result != true)

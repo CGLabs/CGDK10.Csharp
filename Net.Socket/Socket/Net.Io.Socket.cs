@@ -34,31 +34,34 @@ namespace CGDK.Net.Io
 	// publics) 
 		public	eSOCKET_STATE			ExchangeSocketState(eSOCKET_STATE _status)
 		{
-			return (eSOCKET_STATE)Interlocked.Exchange(ref m_status_socket, (int)_status);
+			return (eSOCKET_STATE)Interlocked.Exchange(ref this.m_status_socket, (int)_status);
 		}
 		public	eSOCKET_STATE			SetSocketStateIf(eSOCKET_STATE _status_comperand, eSOCKET_STATE _status_new)
 		{
-			return (eSOCKET_STATE)Interlocked.CompareExchange(ref m_status_socket, (int)_status_new, (int)_status_comperand);
+			return (eSOCKET_STATE)Interlocked.CompareExchange(ref this.m_status_socket, (int)_status_new, (int)_status_comperand);
 		}
 		public	eSOCKET_STATE			SocketState
 		{
-			get { return (eSOCKET_STATE)m_status_socket; }
-            set { ExchangeSocketState(value); }
+			get { return (eSOCKET_STATE)this.m_status_socket; }
+            set { this.ExchangeSocketState(value); }
 		}
 
 		public	bool					CreateSocketHandle(AddressFamily addressFamily, SocketType _socket_type, ProtocolType _protocol_type)
 		{
-			lock(m_cs_socket)
+			lock(this.m_cs_socket)
 			{
 				// check) Listen Socket이 닫힌 상태라면 끝낸다.
-				if(m_handle_socket != null)
+				if(this.m_handle_socket != null)
 					return false;
 
 				// 1) create Socket handle
-				m_handle_socket = new System.Net.Sockets.Socket(addressFamily, _socket_type, _protocol_type);
+				this.m_handle_socket = new System.Net.Sockets.Socket(addressFamily, _socket_type, _protocol_type);
+
+				// 2) set default socket options
+				this.m_handle_socket.SetSocketOption(SocketOptionLevel.IPv6, SocketOptionName.IPv6Only, false);
 
 				// return) 
-				return m_handle_socket!=null;
+				return this.m_handle_socket != null;
 			}
 		}
 		public System.Net.Sockets.Socket SocketHandle

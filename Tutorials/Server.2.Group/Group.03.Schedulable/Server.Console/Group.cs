@@ -72,8 +72,8 @@ namespace TutorialGroupServer
 		{
 			// - 전송할 메시지를 작성한다.
 			var buf_Send = CGDK.Factory.Memory.AllocBuffer(256);
-			buf_Send.Append<UInt32>();
-			buf_Send.Append<UInt32>();
+			buf_Send.Append<UInt32>(0);
+			buf_Send.Append<UInt32>(0);
 			buf_Send.SetFront<UInt32>((UInt32)buf_Send.Count, 0);
 
 			// - 모든 group 멤버에 Message 전송

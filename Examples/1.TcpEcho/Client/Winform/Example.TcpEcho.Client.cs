@@ -74,9 +74,8 @@ namespace Sample.TcpEcho.Client.Winform
 			// 1) 8Byte Message
 			{
 				var temp_buffer = CGDK.Factory.Memory.AllocBuffer(8);
-				temp_buffer.Append<int>(8);
-				temp_buffer.SetFront<int>(temp_buffer.Count + 4);
-				temp_buffer.AppendCRC();
+				temp_buffer.Append<Int64>(8);
+				temp_buffer.SetFront<int>(temp_buffer.Count);
 
 				for (int i = 0, count = 1; i < 16; ++i, count *= 2)
 				{
@@ -96,10 +95,9 @@ namespace Sample.TcpEcho.Client.Winform
 			{
 				var temp_buffer = CGDK.Factory.Memory.AllocBuffer(64);
 				temp_buffer.Append<int>(64);
-				for (int k = 0; k < 56; k += sizeof(int))
+				for (int k = 0; k < 60; k += sizeof(int))
 					temp_buffer.Append<int>(k);
-				temp_buffer.SetFront<int>(temp_buffer.Count + CGDK.buffer.SIZE_OF_CRC);
-				temp_buffer.AppendCRC();
+				temp_buffer.SetFront<int>(temp_buffer.Count);
 
 				for (int i = 0, count = 1; i < 13; ++i, count *= 2)
 				{
@@ -119,10 +117,9 @@ namespace Sample.TcpEcho.Client.Winform
 			{
 				var temp_buffer = CGDK.Factory.Memory.AllocBuffer(256);
 				temp_buffer.Append<int>(256);
-				for (int k = 0; k < 248; k += sizeof(int))
+				for (int k = 0; k < 252; k += sizeof(int))
 					temp_buffer.Append<int>(k);
-				temp_buffer.SetFront<int>(temp_buffer.Count + 4);
-				temp_buffer.AppendCRC();
+				temp_buffer.SetFront<int>(temp_buffer.Count);
 
 				for (int i = 0, count = 1; i < 11; ++i, count *= 2)
 				{
@@ -133,7 +130,6 @@ namespace Sample.TcpEcho.Client.Winform
 					{
 						m_buffer_message[2, i].Append(temp_buffer.Array, temp_buffer.Offset, temp_buffer.Count);
 					}
-
 				}
 				CGDK.Factory.Memory.Free(temp_buffer.Data);
 			}
@@ -143,10 +139,9 @@ namespace Sample.TcpEcho.Client.Winform
 			{
 				var temp_buffer = CGDK.Factory.Memory.AllocBuffer(1024);
 				temp_buffer.Append<int>(1024);
-				for (int k = 0; k < 1016; k += sizeof(int))
+				for (int k = 0; k < 1020; k += sizeof(int))
 					temp_buffer.Append<int>(k);
-				temp_buffer.SetFront<int>(temp_buffer.Count + 4);
-				temp_buffer.AppendCRC();
+				temp_buffer.SetFront<int>(temp_buffer.Count);
 
 				for (int i = 0, count = 1; i < 9; ++i, count *= 2)
 				{
@@ -167,10 +162,9 @@ namespace Sample.TcpEcho.Client.Winform
 			{
 				var temp_buffer = CGDK.Factory.Memory.AllocBuffer(4096);
 				temp_buffer.Append<int>(4096);
-				for (int k = 0; k < 4088; k += sizeof(int))
+				for (int k = 0; k < 4092; k += sizeof(int))
 					temp_buffer.Append<int>(k);
-				temp_buffer.SetFront<int>(temp_buffer.Count + 4);
-				temp_buffer.AppendCRC();
+				temp_buffer.SetFront<int>(temp_buffer.Count);
 
 				for (int i = 0, count = 1; i < 7; ++i, count *= 2)
 				{
@@ -190,10 +184,9 @@ namespace Sample.TcpEcho.Client.Winform
 			{
 				var temp_buffer = CGDK.Factory.Memory.AllocBuffer(16384);
 				temp_buffer.Append<int>(16384);
-				for (int k = 0; k < 16376; k += sizeof(int))
+				for (int k = 0; k < 16380; k += sizeof(int))
 					temp_buffer.Append<int>(k);
-				temp_buffer.SetFront<int>(temp_buffer.Count + 4);
-				temp_buffer.AppendCRC();
+				temp_buffer.SetFront<int>(temp_buffer.Count);
 
 				for (int i = 0, count = 1; i < 5; ++i, count *= 2)
 				{
@@ -213,10 +206,9 @@ namespace Sample.TcpEcho.Client.Winform
 			{
 				CGDK.buffer temp_buffer = CGDK.Factory.Memory.AllocBuffer(65536);
 				temp_buffer.Append<int>(65536);
-				for (int k = 0; k < 65528; k += sizeof(int))
+				for (int k = 0; k < 65532; k += sizeof(int))
 					temp_buffer.Append<int>(k);
-				temp_buffer.SetFront<int>(temp_buffer.Count + 4);
-				temp_buffer.AppendCRC();
+				temp_buffer.SetFront<int>(temp_buffer.Count);
 
 				for (int i = 0, count = 1; i < 3; ++i, count *= 2)
 				{
